@@ -3,6 +3,10 @@ import time
 from requests.exceptions import ConnectionError
 import socket
 
+def banner():
+	print("---------------PING+-----------------")
+
+	
 def internet_connection_test(url):
 	#url = 'https://www.google.com/' //TODO
 	print(f'Attempting to connect to {url} to determine internet connection status.')
