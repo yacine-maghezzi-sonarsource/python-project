@@ -1,4 +1,5 @@
 import requests
+import time
 from requests.exceptions import ConnectionError
 
 def internet_connection_test():
@@ -7,10 +8,13 @@ def internet_connection_test():
 	
 	try:
 		print(url)
+		tic = time.perf_counter()
 		resp = requests.get(url, timeout = 10)
+		toc = time.perf_counter()
 		resp.text
 		resp.status_code
 		print(f'Connection to {url} was successful.')
+		print(f"Resp time in {toc - tic:0.4f} seconds")
 		return True
 	except ConnectionError as e:
 		requests.ConnectionError
