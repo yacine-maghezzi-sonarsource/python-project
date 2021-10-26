@@ -6,7 +6,7 @@ import socket
 def banner():
 	print("---------------PING+-----------------")
 
-	
+
 def internet_connection_test(url):
 	#url = 'https://www.google.com/' //TODO
 	print(f'Attempting to connect to {url} to determine internet connection status.')
@@ -21,7 +21,7 @@ def internet_connection_test(url):
 		print(f'Connection to {url} was successful.')
 		print(f"Resp time in {toc - tic:0.4f} seconds")
 		return True
-	except ConnectionError as e:
+	except ConnectionError as e: #FIXME
 		requests.ConnectionError
 		print(f'Failed to connect to {url}.')
 		return False
