@@ -5,6 +5,7 @@ import socket
 
 def banner():
 	print("---------------PING+3-----------------")
+	print("---------------Bonjour-----------------")
 
 
 def internet_connection_test(url):
