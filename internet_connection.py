@@ -4,7 +4,7 @@ from requests.exceptions import ConnectionError
 import socket
 
 def banner():
-	print("---------------PING+-----------------")
+	print("---------------PING+3-----------------")
 
 
 def internet_connection_test(url):
