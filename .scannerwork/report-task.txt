@@ -1,0 +1,6 @@
+projectKey=python-project-local
+serverUrl=http://172.17.0.2:9000
+serverVersion=9.2.0.49834
+dashboardUrl=http://172.17.0.2:9000/dashboard?id=python-project-local
+ceTaskId=AX16lvVPEjHgLR7V7iFM
+ceTaskUrl=http://172.17.0.2:9000/api/ce/task?id=AX16lvVPEjHgLR7V7iFM
