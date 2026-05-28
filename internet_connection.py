@@ -12,12 +12,12 @@ def internet_connection_test():
 		resp.status_code
 		print(f'Connection to {url} was successful.')
 		return True
-	except ConnectionError as e:
+	except ConnectionError:
 		requests.ConnectionError
 		print(f'Failed to connect to {url}.')
 		return False
-	except:
-		print(f'Failed with unparsed reason.')
+	except Exception:
+		print('Failed with unparsed reason.')
 		return False
 
 internet_connection_test()

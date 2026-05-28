@@ -6,8 +6,8 @@ import datetime  # module of python to get the date and time
 
 
 def process_date(user_input):
-    user_input = re.sub(r"/", " ", user_input)  # substitute / with space
-    user_input = re.sub(r"-", " ", user_input)  # substitute - with space
+    user_input = user_input.replace("/", " ")  # substitute / with space
+    user_input = user_input.replace("-", " ")  # substitute - with space
     return user_input
 
 
